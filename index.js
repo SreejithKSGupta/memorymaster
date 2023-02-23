@@ -62,7 +62,13 @@ function setlistners(){
                 firstcard=this;
             }
             else{
+
                 secondcard=this;
+                if(firstcard==secondcard){
+                    moves--;
+                    console.log("samecard");
+                    return;
+                }
                 console.log("secondcard");
                 this.classList.toggle('flip');
                 if(firstcard.innerHTML==secondcard.innerHTML){
