@@ -1,0 +1,114 @@
+:root{
+    --gamecardwidth: 30%;
+}
+*,:before,:after{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    width: 100%;
+}
+body{
+    background-color: #000000;
+    color: #fff;
+    height: 100vh;
+    width: 100vw;
+    justify-content: space-between;
+    -webkit-user-select: none;
+    user-select: none;
+    user-zoom: none;
+    font-size:clamp(10px, 2vw, 20px);
+}
+#header{
+    background-color: #0d54be;
+    color: #fff;
+    height: 10vh;
+    font-size: 300%;
+}
+#content{
+    background-color: #000000;
+    color: #000;
+    height: 80vh;
+    font-size: 200%;
+}
+#footer{
+    background-color: #0d54be;
+    color: #fff;
+    height: 10vh;
+    font-size: 200%;
+}
+.resultscreen{
+    width: clamp(300px, 50%, 800px);
+    background-color: #007226;
+    color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    font-size:200%;
+}
+#nextbtn{
+    background-color: #0d54be;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+#playerrow{
+    background-color: #000000;
+    color: #ffffff;
+    height: 10vh;
+    font-size: 120%;
+}
+#playerrow div{
+    display: flex;
+    flex-direction: row;
+}
+#playerrow div div{
+    margin-right: 20px;
+   color: rgb(221, 221, 221);
+}
+#gamebody{
+    background-color: #161616;
+    color: #ffffff;
+    height: 70vh;
+    flex-wrap: wrap;
+    overflow: scroll;
+}
+.gamecard{
+    width:clamp(100px,var(--gamecardwidth), 500px);
+    height:clamp(200px,var(--gamecardwidth), 900px);
+    text-align: center;
+    background-color: rgb(58, 58, 58);
+    border-radius: 10px;
+    font-size: 200%;
+    color:  rgb(58, 58, 58) ;
+    cursor: pointer;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+.flip{
+    background-color: #0d54be;
+    color: #fff;
+    transition-duration:3s;
+}
+.completed{
+    background-color: #00ff2a;
+    color:  rgb(58, 58, 58) ;
+   
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
